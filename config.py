@@ -7,6 +7,13 @@ PAGE_DIM = {'default_reading':[(10, 30, 290, 750),(310, 30, 600, 750)],
                 'end_writing':[(10, 30, 290, 650),(310, 30, 600, 650)]
                 }
 
+ANSWERPG_DIMS = {'reading_dim': (10, 30, 300, 350),
+                     'writing_dim': (310, 30, 600, 350),
+                     'math_nocalc_dim': (10, 350, 200, 650),
+                     'math_calc_dim': (210, 350, 600, 650)
+                }
+STOP_DIM = (250,610,330,660)
+
 TESTS_NAMES = {
     'test1':{'College Board Practice Test 1'},
     'test2':{'College Board Practice Test 2'},

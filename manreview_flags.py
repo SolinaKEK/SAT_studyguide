@@ -10,7 +10,7 @@ import pdfplumber
 import re
 
 PATH = './sat-practice-test-1.pdf'
-FLAGS = ('based on the graph above', 'information in the graph', 'adapted from')
+FLAG = 'Adapted from'
 
 start_page = 4
 flag  = False
@@ -22,7 +22,7 @@ with pdfplumber.open(r'./sat-practice-test-1.pdf') as pdf:
         string = page.within_bbox((0,0,612,792), relative = True).extract_text(x_tolerance =1, layout=True).strip()
     
         re.sub(r'[^(adapted from)]*','',string)
-        if 'Adapted from' in string:
+        if FLAG in string:
             flag = True
             print(flag)
             flagged_pages.append(str(i+1))
