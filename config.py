@@ -7,6 +7,9 @@ PAGE_DIM = {'default_reading':[(10, 30, 290, 750),(310, 30, 600, 750)],
                 'end_writing':[(10, 30, 290, 650),(310, 30, 600, 650)]
                 }
 
+SECTION_DIM = DIM = (0, 0, 200, 100)
+
+
 ANSWERPG_DIMS = {'reading_dim': (10, 30, 300, 350),
                      'writing_dim': (310, 30, 600, 350),
                      'math_nocalc_dim': (10, 350, 200, 650),
